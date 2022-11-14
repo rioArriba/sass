@@ -1,0 +1,30 @@
+@each $index, $pixels in $padding {
+    .g--padding-#{$index} {
+      padding-top: $pixels;
+      padding-bottom: $pixels;
+      padding-left: $pixels;
+      padding-right: $pixels;  
+    }
+    .g--padding-right-#{$index} {
+        padding-right: $pixels;
+    }
+    .g--padding-left-#{$index} {
+        padding-left: $pixels;
+    }
+    .g--padding-top-#{$index} {
+        padding-top: $pixels;
+    }
+    .g--padding-bottom#{$index} {
+        padding-bottom: $pixels;
+    }
+    .g--padding-vertical-#{$index} {
+        padding-top: $pixels;
+        padding-bottom: $pixels;
+    }
+    .g--padding-horizontal-#{$index} {
+        padding-left: $pixels;
+        padding-right: $pixels;
+    }
+} 
+
+

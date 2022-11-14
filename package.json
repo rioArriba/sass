@@ -1,0 +1,15 @@
+{
+  "name": "pruebaexamen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-scss": "sass ./src/web/scss:./dist/css"
+  },
+  "author": "",
+  "license": "ISC"
+}

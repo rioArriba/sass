@@ -1,0 +1,39 @@
+$padding: (
+    "0": 0px,
+    "1": 4px,    
+    "2": 6px,
+    "3": 10px,
+    "4": 16px,
+    "5": 24px,
+    "6": 40px,
+    "7": 64px,
+    "8": 100px,
+    "9": 162px
+);
+
+$border-width: (1px, 2px, 3px, 4px, 6px, 10px, 16px, 24px, 36px, 50px);
+
+$box-shadow: ("0px 1px 3px black",
+"0px 4px 6px black",
+"0px 5px 15px black",
+"0px 10px 24px black",
+"0px 15px 35px black"
+);
+
+$font-size-values: (
+    "0": 6px,
+    "1": 10px,    
+    "2": 14px,
+    "3": 16px,
+    "4": 20px,
+    "5": 24px,
+    "6": 32px,
+    "7": 48px,
+    "8": 64px,
+    "9": 100px
+);
+
+$colors: (
+    "azul": (#B5D5F7,#A4CBEF,#90C0E4,#67A6D0,#4093BF,#2F7798,#1C5C73,#114D5F,#08424E),
+    "rojo": (#F8CCC3,#EFB6AE,#E39D96,#CF7772,#BC4949,#983734,#71251E,#5B1010,#420505)
+);

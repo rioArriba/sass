@@ -1,0 +1,16 @@
+
+
+@each $name, $color in $colors {
+    @for $index from 1 to length($color)+1 {
+        .g--background-color-#{$name}-#{$index} {
+            background-color: getColor($name,$index);
+
+        }
+        .g--color-#{$name}-#{$index} {
+            color: getColor($name,$index);
+        }
+        .g--border-color-#{$name}-#{$index} {
+            border-color: getColor($name,$index);
+        }
+    }
+}

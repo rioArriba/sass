@@ -1,0 +1,5 @@
+@each $index, $pixels in $font-size-values {
+    .g--font-size-#{$index} {
+        font-size: $pixels; 
+    }
+}

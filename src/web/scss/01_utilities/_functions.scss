@@ -1,0 +1,58 @@
+@function getFontsSize($size) {
+    @return map-get($font-size-values, $size);
+}
+
+@function getPadding($size) {
+    @return map-get($padding, $size);
+}
+
+@function getBorderWidth($size) {
+    @return nth($border-width, $size);
+
+}
+@function getBoxShadow($size) {
+    @return unquote(nth($list: $box-shadow, $n: $size ));
+}
+@function getColor($key, $color) {
+    @return map-get(map-get($map: $colors, $key: $color), $key);
+
+}
+@function getPaddingKeys() {
+    @return  map-keys($map: $padding);
+
+}
+@function getBorderWidthKeys() {
+    @return map-keys($map: $border-width);
+}
+@function getBoxShadowKeys() {
+    @return map-keys($map: $box-shadow);
+}
+ 
+@function getColorVariants($key) {
+    @return map-get($colors,""+$key);
+  }
+   
+  @function getColor($key,$index) {
+    @return nth(getColorVariants($key),$index);
+  }
+
+/*
+@function getPaddingKeys() {
+    $resultado:();
+    @for $i from 0 to length($padding) {
+        $resultado:append($resultado,$i);
+    }
+    @return $resultado;
+}
+
+*/
+@function getPaddingArray($clave) {
+    @return nth($padding,$clave);
+}
+@each $clave in getPaddingKeys() {
+    $valor:getPadding($clave);
+
+    .g--padding-#{$clave} {
+        padding:$valor;
+    }
+}
